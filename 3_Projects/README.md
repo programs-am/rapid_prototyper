@@ -1,16 +1,15 @@
-# 3_Projects — Non-Dev Working Projects
+# 3_Projects — Other Working Projects
 
-Anything ongoing that isn't a software build or prototype. The post-week working surface
-that keeps the OS useful once the program ends. One subfolder per project, named
-descriptively, each with a short `README.md` saying what it is and where it stands.
+Anything ongoing that isn't a prototype build. The working surface that keeps the OS useful after the
+pipeline is done. One subfolder per project, named descriptively, each with a short `README.md` saying
+what it is and where it stands.
 
 Use for:
 - Strategy and positioning work
 - Research projects and competitive analysis
-- Partnership and business-development tracks
+- Supplier, retailer and partnership tracks
 - Operational initiatives and internal SOPs
-- Any structured, multi-file work that isn't a software build
+- Any structured, multi-file work that isn't a prototype
 
-**Rule:** not in-week pipeline exercises (those live in `1_Product_Week/`); not dev builds
-(those live in `4_Dev_Projects/`). If a project gets its own repo or gets deployed, it
-moves to `4_Dev_Projects/`.
+**Rule:** not pipeline exercises (those live in `1_Sprint/`); not prototype builds (those live in
+`4_Prototypes/`).

@@ -4,9 +4,9 @@ The data convention the whole pipeline runs on.
 
 ## raw/
 
-Drop everything here: interview transcripts and recordings notes, call notes, analytics
-exports, survey results, market research, competitor notes, field test results, technical
-specs, regulatory documents. **Any format.** This folder is gitignored — its contents stay
+Drop everything here: customer conversation notes and transcripts, call notes, analytics or
+sales exports, survey results, market research, competitor notes, supplier quotes, sample or
+prototype test results, technical specs, regulatory documents. **Any format.** This folder is gitignored — its contents stay
 on your machine.
 
 ## processed/
@@ -32,5 +32,5 @@ This folder holds **evidence only**. Agent-generated pipeline artifacts (value p
 
 Raw data is gitignored by default. Before pushing this repo anywhere, check
 `sources/processed/` for anything customer-identifying or sensitive — redact (names →
-roles) or keep those files local. If your data is regulated or under NDA, raise it in
-session for private-inference options.
+roles) or keep those files local. If your data is regulated or under NDA, keep it
+local and out of any shared copy of this repo.

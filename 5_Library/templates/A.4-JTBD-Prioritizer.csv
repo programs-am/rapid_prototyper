@@ -8,7 +8,7 @@ Step 3 — Score two things on a 1–10 scale. Importance = how much the custome
 NOTE: This is an OPTIONAL manual first-cut. The primary prioritization path is the jtbd-prioritizer AI skill (conversational — runs 5 dimensions automatically from 2_Outputs/.agents/A.4-JTBD/JTBD.md). Use this CSV for a fast quantitative gut-check only.
 ,,,,,,,,,
 Job #,When,I want to,So I can,Dimension,Importance (1-10),Satisfaction (1-10),Opportunity Score,Verdict,Keep/Kill
-"1 (example)","I need to track monthly spending across multiple accounts","see all my money in one place instantly","make confident decisions without digging through statements",Functional,9,3,15,"Prioritize — underserved, build here first",Keep
+"1 (example)","I am several miles into a long run","know I am drinking enough without breaking stride","finish strong instead of cramping up",Functional,9,3,15,"Prioritize — underserved, build here first",Keep
 2,,,,,,,,,
 3,,,,,,,,,
 4,,,,,,,,,

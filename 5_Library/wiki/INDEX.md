@@ -12,7 +12,8 @@ Skim this before any session to see what you have and what's thin.
 
 ## Entities
 
-People, companies, and segments that recur across your data. One short line each, with
+People, companies, and segments that recur across your data (a repeat customer, a supplier,
+a retail buyer, a competitor, an advisor, a customer segment). One short line each, with
 links to the files where they appear. Add an entity page in `wiki/` (copy
 `wiki/_templates/entity-page.md`) when one accumulates enough to deserve its own file.
 
@@ -22,12 +23,13 @@ links to the files where they appear. Add an entity page in `wiki/` (copy
 
 | Artifact | Stage | Status |
 |---|---|---|
-| `2_Outputs/.agents/A.3-Value-Prop/Value-Proposition.md` | A.3 Value proposition | ⏳ not yet |
-| `2_Outputs/.agents/A.3-User-Persona/User-Persona.md` | A.3 User persona | ⏳ not yet |
-| `2_Outputs/.agents/A.4-JTBD/JTBD.md` | A.4 Jobs-to-be-done | ⏳ not yet |
-| `2_Outputs/.agents/A.4-JTBD/JTBD-Prioritized.md` | A.4 Prioritized jobs | ⏳ not yet |
-| `2_Outputs/.agents/A.5-PRD-v1/PRD-v1.md` | A.5 PRD v1 | ⏳ not yet |
-| `2_Outputs/.agents/C.2-Metrics-OKR/Metrics-OKR.md` | C.2 Metrics | ⏳ not yet |
+| `2_Outputs/.agents/A.3-Value-Prop/Value-Proposition.md` | A.3 Value proposition | not yet |
+| `2_Outputs/.agents/A.3-User-Persona/User-Persona.md` | A.3 User persona | not yet |
+| `2_Outputs/.agents/A.4-JTBD/JTBD.md` | A.4 Jobs-to-be-done | not yet |
+| `2_Outputs/.agents/A.4-JTBD/JTBD-Prioritized.md` | A.4 Prioritized jobs | not yet |
+| `2_Outputs/.agents/A.5-PRD-v1/PRD-v1.md` | A.5 PRD v1 | not yet |
+| `2_Outputs/.agents/C.2-Metrics-OKR/Metrics-OKR.md` | C.2 Metrics | not yet |
+| `2_Outputs/.agents/C.3-PRD-v2/PRD-v2.md` | C.3 PRD v2 | not yet |
 
 ## Gaps
 

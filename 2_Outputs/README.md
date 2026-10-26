@@ -1,12 +1,12 @@
 # 2_Outputs — Agent Work Products
 
 The full record of what the **agent** produces — the markdown deliverable each pipeline skill
-writes, derived from the founder's hand-completed template (in `1_Product_Week/<session>/`) plus
+writes, derived from the founder's hand-completed template (in `1_Sprint/<stage>/`) plus
 evidence. Intended to be shared, shown to stakeholders, and built upon.
 
 This top level is just a pointer. The actual outputs live in a **dotfile-prefixed
-`.agents/` layer** — agent-owned, **not hand-edited** — mirroring `1_Product_Week/`
-session-for-session:
+`.agents/` layer** — agent-owned, **not hand-edited** — mirroring `1_Sprint/`
+stage-for-stage:
 
 ```
 2_Outputs/
@@ -20,7 +20,7 @@ session-for-session:
 ```
 
 **Rule — three homes, two owners:**
-- `1_Product_Week/<session>/` — the founder's **hand-completed template** (human-owned input). Founders fill these themselves; the agent never fills them.
+- `1_Sprint/<session>/` — the founder's **hand-completed template** (human-owned input). Founders fill these themselves; the agent never fills them.
 - `2_Outputs/.agents/<session>/` — the agent's full markdown work products (agent-owned, not hand-edited). What you ship and point stakeholders to.
 - `0_Company/` — only the **distilled essence** the next skill reads (via `util_get_company_info`).
 

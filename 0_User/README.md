@@ -11,7 +11,7 @@ skill — the `1-founder-bootstrap` interview seeds them; no skill edits the lay
 ├── 01_Overview.md      # name, role, identity
 ├── 02_Expertise.md     # background, domain expertise, strengths, gaps
 ├── 03_Preferences.md   # working style: tone, depth, pace, decisions, tools
-├── 04_Goals.md         # what you want during & after the program
+├── 04_Goals.md         # what you want from this work, and beyond it
 └── Z_Library.md        # fuller background, referenced by file name + section header
 ```
 

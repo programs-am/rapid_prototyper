@@ -1,12 +1,12 @@
 <!-- C.3-PRD-v2-Template.md — fillable template. Founder fills by hand. -->
-<!-- This file lives in 1_Product_Week/C.3-PRD-v2/ at session time. -->
+<!-- This file lives in 1_Sprint/C.3-PRD-v2/ when you work on it. -->
 <!-- Do not announce the AI-skill-chain footer; the founder is not expected to manage files. -->
 <!-- Sections 1, 3, 4, 5, 6 carry forward from A.5-PRD-v1 — the skill shows confirmed/updated versions. -->
 <!-- Section 2 (Market Dynamics) renames from v1's "Company + Value Proposition" to "Company + Problem". -->
 
 <!-- form-meta:
 eyebrow = Founder OS · Product Definition
-tag = Product Week · C.3
+tag = Sprint · C.3
 -->
 
 <!-- field-hints: one per field label (keyed by label; structure above is untouched).
@@ -34,17 +34,19 @@ V0.2 — What it does = One line: what it does for the user, not how it's built.
 V1.0 — Job # = The job number this V1.0 feature directly serves.
 V1.0 — What it does = One line: what it does for the user, not how it's built.
 Hypothesis (= Assumption #1) = If [feature], then [user] will [behaviour], proving [assumption].
-Output = The prototype artifact — e.g. clickable Figma, no-code app, scripted demo.
+Prototype form = What you made to test it: app or clickable screens / web page / physical model or rig / pack + samples / campaign or deck / hand-run service.
+Output = What the customer sees or receives — e.g. a clickable flow, a landing page, a model in hand, a sample with a pack, an email sequence, a manual service run.
+Test / Pass = Who, how many and how you tested it, and the observable result that counts as a pass.
 User flow = Three-step journey: what the user does from entry to value moment.
 What to exclude = Features or scope explicitly out for this prototype sprint.
 Solution = The product-level bet that, if wrong, makes the solution irrelevant.
 Market / Problem / Solution = An assumption about the market, problem, or solution that could kill this.
 Objective = One qualitative, time-bound direction — where you want to be, not a metric.
 KR1 — Key Result = Measurable signal that proves or disproves assumption #1.
-KR1 — Signal type = Category: acquisition, activation, retention, revenue, or referral.
+KR1 — Signal type = Category: acquisition, activation, retention, revenue, referral — or a product-specific signal (see the metrics skill's signals-by-lane list).
 KR1 — Proves assumption # = The assumption number from §7 this KR validates.
 KR2 — Key Result = Measurable signal that proves or disproves an assumption.
-KR2 — Signal type = Category: acquisition, activation, retention, revenue, or referral.
+KR2 — Signal type = Category: acquisition, activation, retention, revenue, referral — or a product-specific signal (see the metrics skill's signals-by-lane list).
 KR2 — Proves assumption # = The assumption number from §7 this KR validates.
 Phase = The release stage — V0.1, V0.2, or V1.0.
 V0.1 = Must-have scope for V0.1 — the smallest thing that tests the hypothesis.
@@ -54,7 +56,7 @@ V1.0 = Future scope for V1.0 — full solution once the market signal is confirm
 
 # PRD v2
 
-A fill-in-the-blank exercise. Write all 9 sections. Sections 1, 3, 4, 5, 6 carry forward from PRD v1 — the skill surfaces what changed and the founder confirms. Sections 2, 7, 8, 9 are new (Market Dynamics, Assumptions & Risks, OKRs, Roadmap). The riskiest assumption in §7 is the test the OKRs in §8 must prove. Output is the final PRD handed off for Day 3 prototyping and Demo Day.
+A fill-in-the-blank exercise. Write all 9 sections. Sections 1, 3, 4, 5, 6 carry forward from PRD v1 — the skill surfaces what changed and the founder confirms. Sections 2, 7, 8, 9 are new (Market Dynamics, Assumptions & Risks, OKRs, Roadmap). The riskiest assumption in §7 is the test the OKRs in §8 must prove. Output is the final PRD you use for your next prototype round and your demo.
 
 ---
 
@@ -118,8 +120,10 @@ A fill-in-the-blank exercise. Write all 9 sections. Sections 1, 3, 4, 5, 6 carry
 
 | | |
 |---|---|
+| Prototype form | |
 | Hypothesis (= Assumption #1) | |
 | Output | |
+| Test / Pass | |
 
 **User flow:** _______________________________________________
 

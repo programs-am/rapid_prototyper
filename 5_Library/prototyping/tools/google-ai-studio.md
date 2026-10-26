@@ -1,9 +1,9 @@
 ---
 title: "Google AI Studio"
-category: "Beginner"
-session: "A.5"
-owner: "Damien"
-date: "Jun 15"
+category: "Build an App or Site"
+lanes:
+  - software-app
+  - service-experience
 summary: "Free browser-based access to Google's Gemini models — prototype, generate API keys, and deploy without a credit card."
 ---
 
@@ -12,6 +12,8 @@ summary: "Free browser-based access to Google's Gemini models — prototype, gen
 Free browser-based access to Google's Gemini models — prototype, generate API keys, and deploy without a credit card.
 
 - **Pricing:** Free. Gemini Flash ~15M tokens/day. No credit card required.
+- **Pricing note:** Prices and limits change often; last reviewed Jun 2026 — check the vendor's site before relying on it.
+- **Best for:** A founder testing whether an AI-powered feature or assistant works, using prompts before writing any app code.
 
 **5-Step Quickstart**
 1. Go to aistudio.google.com and sign in with any Google account

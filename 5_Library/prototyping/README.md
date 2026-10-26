@@ -1,30 +1,54 @@
-# prototyping/ — Tool Guides & Session Resources
+# prototyping/ — Lanes, Tools and Guides
 
-Curated prototyping resources for the Founder OS cohort. The routing skill (`P.3.1`) asks qualifying questions and recommends a tool; these guides are the reference layer it draws from.
+Everything the `prototype-kit` skill draws from. You can also browse it yourself.
 
-## Tool guides (`tools/`)
+## 1. Pick your lane
 
-| Tool | Category | Session |
+| Lane | You are making... | Guide |
 |---|---|---|
-| [bolt.md](tools/bolt.md) | Beginner | A.5 |
-| [claude-code.md](tools/claude-code.md) | Intermediate | A.5 |
-| [cursor.md](tools/cursor.md) | Intermediate | A.5 |
-| [figma.md](tools/figma.md) | Design & Mockup | A.5 |
-| [google-ai-studio.md](tools/google-ai-studio.md) | Beginner | A.5 |
-| [lovable.md](tools/lovable.md) | Beginner | A.5 |
-| [onshape.md](tools/onshape.md) | Hardware & Physical Simulation | A.5 |
-| [openai-codex.md](tools/openai-codex.md) | Intermediate | A.5 |
-| [replit.md](tools/replit.md) | Beginner | A.5 |
-| [stitch.md](tools/stitch.md) | Design & Mockup | A.5 |
-| [tinkercad.md](tools/tinkercad.md) | Hardware & Physical Simulation | A.5 |
-| [v0.md](tools/v0.md) | Beginner | A.5 |
+| Software / App | an app, SaaS tool, dashboard, AI product | [lanes/software-app.md](lanes/software-app.md) |
+| Website | a landing page, brochure site, fake-door test | [lanes/website.md](lanes/website.md) |
+| Physical product | a device, tool, appliance, furniture, other hardware | [lanes/physical-product.md](lanes/physical-product.md) |
+| CPG | food, beverage, beauty, personal care, household | [lanes/cpg.md](lanes/cpg.md) |
+| Fashion | apparel, footwear, bags, accessories, jewelry | [lanes/fashion.md](lanes/fashion.md) |
+| Marketing & comms | a campaign, message, deck, email/social, brand | [lanes/marketing-comms.md](lanes/marketing-comms.md) |
+| Service & experience | a service, program, marketplace, event, manual workflow | [lanes/service-experience.md](lanes/service-experience.md) |
 
-Each guide: title, pricing, 5-step quickstart, cohort-specific tips.
+Each lane guide has: what you're prototyping, a **fidelity ladder** (where to stop), the spec docs to
+make, tests with example hypotheses, what the agent can build for you directly, guardrails, and starter
+prompts. Combine at most two lanes (e.g. CPG + website).
 
-## Session guides & library
+## 2. Pick your tools
 
-| File | Description |
+One guide per tool in [tools/](tools/). Each has a 5-step quickstart. Prices and limits change often,
+so check the vendor before relying on anything.
+
+| Need | Start with |
 |---|---|
-| [Prototyping-Guide-A5.md](Prototyping-Guide-A5.md) | Day 1 in-session guide (A.5, Mon Jun 15) — scope → build → capture |
-| [Prototyping-Guide-C3.md](Prototyping-Guide-C3.md) | Day 3 in-session guide (C.3, Wed Jun 17) — triage feedback → refine → close the loop |
-| [Prototyping-Resource-Library.md](Prototyping-Resource-Library.md) | P.3.1 routing skill spec + tool library overview — both session guides link here |
+| Rough HTML mockups, copy, docs, simple 3D scripts | `claude-artifacts`, or the equivalent in whichever agent you use (`claude-code`, `openai-codex`, `google-antigravity`) |
+| Clickable screens | `stitch`, `figma`, `v0` |
+| A working web app | `google-ai-studio`, `lovable`, `bolt`, `replit` |
+| A real codebase | `claude-code`, `openai-codex`, `google-antigravity`, `cursor` |
+| A live web page | `carrd`, `framer`, `webflow` |
+| Forms, waitlists, surveys | `tally` |
+| Packaging, social, decks, brand | `canva`, `gamma` |
+| Concept images, product and pack renders | `ai-image-generation`, `mockup-generators` |
+| 3D: simple or code-based | `tinkercad`, `openscad` |
+| 3D: serious CAD | `onshape`, `fusion-360` |
+| 3D: quick concept shapes | `text-to-3d` |
+| Electronics (works-like) | `wokwi-and-dev-boards` |
+| Samples, prints, PCBs, co-packers, pattern makers | `prototyping-services` |
+
+If you're unsure, run `prototype-kit` — it recommends the tool for your lane and stage.
+
+## 3. The guides
+
+- [Prototyping Guide](../../1_Sprint/A.5-Prototyping-1/Prototyping-Guide.md) — the universal process
+- [Refine Guide](../../1_Sprint/C.3-Prototyping-2/Refine-Guide.md) — round 2
+- Spec-doc templates: `1_Sprint/A.5-Prototyping-1/templates/`
+
+## Two rules for every lane
+
+1. **A prototype tests one hypothesis with the cheapest thing that can answer it.**
+2. **A prototype is not a product.** No real payments, no permanently-stored sensitive personal data,
+   and never present a mockup, render or sample as finished, safe, certified or compliant.

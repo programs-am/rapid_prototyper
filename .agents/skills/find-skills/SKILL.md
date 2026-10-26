@@ -19,7 +19,9 @@ each `SKILL.md` frontmatter is the source of truth for what that skill does and 
 
 1. **List what exists.** Glob `.agents/skills/**/SKILL.md` and read each file's frontmatter
    `name` + `description`. The `description` spells out exactly when that skill should fire — match
-   the founder's ask against it. Do this every time; do not rely on a list kept inside this file.
+   the founder's ask against it. Do this every time; do not rely on a list kept inside this file. `setup.mjs` also creates flat
+   symlinks to each skill (`.agents/skills/<name>`, `.claude/skills/<name>`) — they point at the same
+   files, so ignore the duplicates.
 2. **Respect enabled state.** Read `.agents/skills/skills.json` — a slim registry of
    `{name, path, enabled}`. Skip any skill marked `enabled: false`. A skill that exists on disk but
    is missing from the registry is treated as **enabled** (the registry just hasn't been
@@ -39,16 +41,17 @@ each `SKILL.md` frontmatter is the source of truth for what that skill does and 
 Skills live in buckets under `.agents/skills/`:
 
 - **`find-skills/`** — this finder (you are here); always available.
-- **`wncp-ai/`** — the WNCP pipeline, numbered in deliverable order (`1-…` → `9-…`). Run them in
-  order across the Product Week; each reads the previous one's output. Read the folder names and
+- **`founder-os/`** — the core pipeline, numbered in deliverable order (`1-…` → `9-…`). Run them in
+  order; each reads the previous one's output. `8.5-prototype-kit` turns your PRD into a prototype for
+  any product type (app, website, physical product, CPG, fashion, marketing, service). Read the folder names and
   each `SKILL.md` description (step 1) for the current set and what each does.
-  - **`wncp-ai/util_/`** — file-access utilities (`util_get_user_info`, `util_get_company_info`,
+  - **`founder-os/util_/`** — file-access utilities (`util_get_user_info`, `util_get_company_info`,
     `util_get_inputs`) that own the `0_User/` / `0_Company/` file contracts and the central input
     lookup. Mostly invoked BY other skills — but `util_get_user_info` and `util_get_company_info`
     are also the direct path when a founder wants to view or update their own profile or company
     facts.
 - **function groups** — general / third-party skills added over time (F8); pull them in with the
-  `import-skills` skill (lives in `wncp-ai/`).
+  `import-skills` skill (lives in `founder-os/`).
 
 That's the stable structure. The specific skills, their order, and their triggers come from the
 `SKILL.md` files themselves (step 1) — not from a catalog maintained here, which would drift.

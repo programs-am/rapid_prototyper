@@ -34,21 +34,22 @@ import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SKILLS_DIR = os.path.join(REPO_ROOT, ".agents", "skills")
-WNCP = os.path.join(SKILLS_DIR, "wncp-ai")
+BUCKET = os.path.join(SKILLS_DIR, "founder-os")
 MANIFEST = os.path.join(SKILLS_DIR, "skills.json")
 
 # Canonical contract — grounded in the find-skills pipeline + locked file-map (PRD v1.7).
 # Outputs land in 2_Outputs/.agents/<session>/ with Title-Case filenames; frontmatter names
-# carry the am4- prefix.
+# are plain (no program prefix).
 # folder -> (frontmatter name, [required output paths], chat_only)
 CONTRACT = {
-    "3-customer-discovery-coach": ("am4-customer-discovery-coach", [], True),
-    "4-value-proposition":        ("am4-value-proposition", ["2_Outputs/.agents/A.3-Value-Prop/Value-Proposition.md"], False),
-    "5-user-persona":             ("am4-user-persona", ["2_Outputs/.agents/A.3-User-Persona/User-Persona.md"], False),
-    "6-jtbd":                     ("am4-jtbd", ["2_Outputs/.agents/A.4-JTBD/JTBD.md"], False),
-    "7-jtbd-prioritizer":         ("am4-jtbd-prioritizer", ["2_Outputs/.agents/A.4-JTBD/JTBD-Prioritized.md"], False),
-    "8-draft-prd":                ("am4-prd", ["2_Outputs/.agents/A.5-PRD-v1/PRD-v1.md", "2_Outputs/.agents/C.3-PRD-v2/PRD-v2.md"], False),
-    "9-metrics":                  ("am4-metrics", ["2_Outputs/.agents/C.2-Metrics-OKR/Metrics-OKR.md"], False),
+    "3-customer-discovery-coach": ("customer-discovery-coach", [], True),
+    "4-value-proposition":        ("value-proposition", ["2_Outputs/.agents/A.3-Value-Prop/Value-Proposition.md"], False),
+    "5-user-persona":             ("user-persona", ["2_Outputs/.agents/A.3-User-Persona/User-Persona.md"], False),
+    "6-jtbd":                     ("jtbd", ["2_Outputs/.agents/A.4-JTBD/JTBD.md"], False),
+    "7-jtbd-prioritizer":         ("jtbd-prioritizer", ["2_Outputs/.agents/A.4-JTBD/JTBD-Prioritized.md"], False),
+    "8-draft-prd":                ("prd", ["2_Outputs/.agents/A.5-PRD-v1/PRD-v1.md", "2_Outputs/.agents/C.3-PRD-v2/PRD-v2.md"], False),
+    "8.5-prototype-kit":          ("prototype-kit", ["2_Outputs/.agents/A.5-Prototyping-1/Prototype-Kit.md"], False),
+    "9-metrics":                  ("metrics", ["2_Outputs/.agents/C.2-Metrics-OKR/Metrics-OKR.md"], False),
 }
 # The skills required to be present for a full-suite PASS (bootstrap/ingest deferred).
 REQUIRED = set(CONTRACT)
@@ -66,7 +67,7 @@ FORBIDDEN = [
 ZONES = ["2_Outputs", "0_Company", "5_Library/sources/processed", "5_Library/sources/raw"]
 
 
-# Util skills live one level deeper: wncp-ai/util_/<folder>/SKILL.md
+# Util skills live one level deeper: founder-os/util_/<folder>/SKILL.md
 # Mapping: folder -> (frontmatter name, [substrings the body must contain]).
 # For the two folder-contract owners, the list is the FULL set of required topic files —
 # so the gate fails if a skill drops any required topic (e.g. 03_Preferences / 05_Traction),
@@ -77,12 +78,12 @@ UTIL_CONTRACT = {
                                "04_Goals", "Z_Library"]),
     "util_get_company_info": ("util_get_company_info",
                               ["0_Company/", "01_Overview", "02_Product", "03_Users", "04_Market",
-                               "05_Traction", "06_Team", "07_PW_Insights", "Z_Library"]),
+                               "05_Traction", "06_Team", "07_Insights", "Z_Library"]),
     "util_get_inputs":       ("util_get_inputs",
                               ["5_Library/sources/processed", "util_get_company_info", "2_Outputs/.agents"]),
 }
 
-UTIL_DIR = os.path.join(WNCP, "util_")
+UTIL_DIR = os.path.join(BUCKET, "util_")
 
 
 def frontmatter_name(text):
@@ -95,10 +96,10 @@ def frontmatter_name(text):
 
 def check_skill(folder):
     name, outputs, chat_only = CONTRACT[folder]
-    path = os.path.join(WNCP, folder, "SKILL.md")
+    path = os.path.join(BUCKET, folder, "SKILL.md")
     fails = []
     if not os.path.isfile(path):
-        return [f"missing SKILL.md at wncp-ai/{folder}/"]
+        return [f"missing SKILL.md at founder-os/{folder}/"]
     text = open(path, encoding="utf-8").read()
 
     fm = frontmatter_name(text)
@@ -125,11 +126,11 @@ def check_skill(folder):
 
 
 def check_util(folder, name, required):
-    """Verify a util skill at wncp-ai/util_/<folder>/SKILL.md against its contract."""
+    """Verify a util skill at founder-os/util_/<folder>/SKILL.md against its contract."""
     path = os.path.join(UTIL_DIR, folder, "SKILL.md")
     fails = []
     if not os.path.isfile(path):
-        return [f"missing SKILL.md at wncp-ai/util_/{folder}/"]
+        return [f"missing SKILL.md at founder-os/util_/{folder}/"]
     text = open(path, encoding="utf-8").read()
 
     fm = frontmatter_name(text)
@@ -157,7 +158,7 @@ def in_util_manifest(folder, name):
             data = json.load(fh)
     except (OSError, json.JSONDecodeError):
         return False
-    want = f"wncp-ai/util_/{folder}/SKILL.md"
+    want = f"founder-os/util_/{folder}/SKILL.md"
     return any(s.get("path") == want and s.get("name") == name for s in data.get("skills", []))
 
 
@@ -169,7 +170,7 @@ def in_manifest(folder, name):
             data = json.load(fh)
     except (OSError, json.JSONDecodeError):
         return False
-    want = f"wncp-ai/{folder}/SKILL.md"
+    want = f"founder-os/{folder}/SKILL.md"
     return any(s.get("path") == want and s.get("name") == name for s in data.get("skills", []))
 
 
@@ -204,7 +205,7 @@ def main():
     for folder in targets:
         name = CONTRACT[folder][0]
         fails = check_skill(folder)
-        if os.path.isfile(os.path.join(WNCP, folder, "SKILL.md")):
+        if os.path.isfile(os.path.join(BUCKET, folder, "SKILL.md")):
             present.add(folder)
             if not in_manifest(folder, name):
                 fails.append("not indexed in skills.json (run scan-skills.py)")

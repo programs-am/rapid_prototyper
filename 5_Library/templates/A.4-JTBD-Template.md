@@ -1,11 +1,11 @@
 <!-- A.4-JTBD-Template.md — fillable template. Founder fills by hand. -->
-<!-- This file lives in 1_Product_Week/A.4-JTBD/ at session time. -->
+<!-- This file lives in 1_Sprint/A.4-JTBD/ while you work this stage. -->
 <!-- Do not announce the AI-skill-chain footer; the founder is not expected to manage files. -->
 <!-- Phase markers (#1–#5) are load-bearing: skill reads the value to skip the per-job loop for any job already written. -->
 
 <!-- form-meta:
 eyebrow = Founder OS · User & Market
-tag = Product Week · A.4
+tag = Founder OS · A.4
 -->
 
 <!-- field-hints: one per field label (keyed by label; structure above is untouched).
@@ -14,7 +14,7 @@ Job 2 — When / I want to / So I can = When [situation], I want to [goal], so I
 Job 3 — When / I want to / So I can = When [situation], I want to [goal], so I can [outcome].
 Job 4 — When / I want to / So I can (optional) = When [situation], I want to [goal], so I can [outcome].
 Job 5 — When / I want to / So I can (optional) = When [situation], I want to [goal], so I can [outcome].
-functional / emotional / social = Circle one layer; note the AI role this job maps to.
+functional / emotional / social = Circle one layer; note the AI role only if AI is part of the product (otherwise write irrelevant).
 Statement = The ranked job statement, copied verbatim from the Jobs section above.
 Why #1 = One sentence — why this job ranks first over all others.
 Why #2 = One sentence — why this job ranks second.
@@ -57,9 +57,9 @@ _______________________________________________
 
 ## Per-job tags
 
-<!-- One row per job. Layer and AI role are mandatory; rationale is one line. -->
+<!-- One row per job. Layer is mandatory; rationale is one line. The AI-role column is only filled when AI is part of the product; if there is no AI component, write `irrelevant`. -->
 
-| # | Primary layer | AI role | Rationale |
+| # | Primary layer | AI role (only if AI is part of the product) | Rationale |
 |---|---|---|---|
 | 1 | functional / emotional / social | feature / product core / not yet / irrelevant | |
 | 2 | functional / emotional / social | feature / product core / not yet / irrelevant | |

@@ -4,7 +4,7 @@
      across your data to deserve its own page. Keep it under half a page — this is an
      index card, not a dossier. -->
 
-- **What:** (customer / prospect / competitor / partner / segment)
+- **What:** (customer / prospect / competitor / supplier / retailer / partner / advisor / segment)
 - **Why it matters:**
 
 ## Appears in

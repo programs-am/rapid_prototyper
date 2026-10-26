@@ -1,0 +1,9 @@
+# Notice
+
+Founder OS — Prototyper is adapted from **Founder OS — Access Mode Cohort 4** by WNCP AI ([https\://github.com/WNCP-AI/founder-os-am4](https://github.com/WNCP-AI/founder-os-am4)), a workspace for a software-leaning, cohort-based product program. The discovery-to-PRD pipeline, skill framework, and repository conventions come from that work.&nbsp;
+
+This version of the workspace was created for the **Access Mode 2026 Momentum Summit**. This workspace is not intended for general availability or public distribution. It is solely intended for the creation of prototypes to be used in customer and user research. It is not meant to be used for full production or full production planning of any product or service. It can create useful tools for validating ideas but do not trust it as the final or sole source of truth for your code, production plan, or any other element of your business.&nbsp;
+
+The security of the workspace, or of a given prototype created from it, is wholly dependent upon the security of the user’s technology and organization. Do not attempt to input sensitive or private data (e.g., PII, PCI). Do not attempt to use the prototypes created as generally available products without consulting experts from fields like legal, engineering, marketing, or other fields relevant to your industry.&nbsp;
+
+This workspace is shared only with registrants of the Access Mode 2026 Momentum Summit. The upstream repository did not include a license file when this adaptation was made. Please do not distribute it to anyone else without express written consent of Access Mode and WNCP-AI.&nbsp;

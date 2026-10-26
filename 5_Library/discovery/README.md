@@ -1,41 +1,36 @@
----
-title: "5_Library/discovery — Customer Discovery Assets"
-phase: "P.1 (pre-week)"
-updated: 2026-06-12
----
-
 # Customer Discovery Assets
 
-**Phase:** P.1 — Pre-Week (complete at least 5 customer interviews before the Jun 15 kickoff)
+**Stage:** before you commit to a prototype. Aim for at least 5 customer conversations first.
 
-These assets support founders in moving from assumptions to evidence before building. The skill (AI coach) and tracker are the two tools founders actually use; the deck and one-pager explain the sequence.
+These assets help you move from assumptions to evidence before you build. They work for any kind of product: software, a physical product, a food or fashion brand, a service, or a campaign. The coaching skill and the tracker are the two tools you actually use; the deck and one-pager explain the sequence.
 
 ## Contents
 
 | Path | Type | What it is |
 |---|---|---|
-| `Customer-Discovery-Deck.pptx` | Binary | Slide deck version of the one-pager — used for session presentation |
-| `Customer-Discovery-One-Pager.md` | Markdown | Founder-facing overview explaining the two-tool kit and 6-step sequence |
-| `Customer-Discovery-Tracker.xlsx` | Binary | Five-tab Excel tracker; hypotheses entered once in the Guide tab, all other tabs populate automatically |
-| `founder-kit/Customer-Discovery-Kit.zip` | Binary | Packaged zip of the kit distributed to founders |
-| `founder-kit/Customer-Discovery-Tracker.xlsx` | Binary | Tracker copy distributed inside the founder kit |
-| `founder-kit/START-HERE.md` | Markdown | Founder-facing instructions: how to install the skill, run a coaching session, and use the tracker |
+| `Customer-Discovery-Deck.pptx` | Binary | Slide deck version of the one-pager, for presenting the method to a group |
+| `Customer-Discovery-One-Pager.md` | Markdown | Founder-facing overview of the two-tool kit and the 6-step sequence |
+| `Customer-Discovery-Tracker.xlsx` | Binary | Five-tab Excel tracker. Hypotheses are entered once in the Guide tab and every other tab populates automatically |
+| `founder-kit/Customer-Discovery-Kit.zip` | Binary | Standalone bundle for use outside this repo: `START-HERE.md`, the tracker, and `customer-discovery-coach.skill` |
+| `founder-kit/Customer-Discovery-Tracker.xlsx` | Binary | Same tracker, unpacked for convenience |
+| `founder-kit/START-HERE.md` | Markdown | Plain instructions: install the skill, run a coaching session, use the tracker |
 
-> **Skill files not here:** `SKILL.MD` and `customer-discovery-coach.skill` remain in their source location under `0_System/initial_build/Input_Session_Deliverables/Deliverables/1-Customer-Discovery/` — skill distribution is handled by a separate skills migration run.
+> **Where the skill lives:** inside this repo the coach runs as the `customer-discovery-coach` skill under `.agents/skills/founder-os/`, so there is nothing to install. The `.skill` file inside `Customer-Discovery-Kit.zip` is a copy of the same coach for the Claude app, for use outside the repo or for sharing with someone who is not working in it.
 
-## Session / Phase
+## Where it fits
 
-| Phase | Activity |
+| Stage | Activity |
 |---|---|
-| P.1 (pre-week) | Founders install the coach skill, run a coaching session, enter hypotheses in the tracker, and complete 5+ interviews before Jun 15 |
-| A.4 (week, JTBD session) | Discovery patterns feed into JTBD statement construction |
-| A.5 onwards | JTBD → PRD → Roadmap; this data is the upstream evidence chain |
+| Before A.1 (or alongside A.2) | Run the coach, enter hypotheses in the tracker, and hold at least 5 customer conversations. Typically a few days of calendar time, since people take time to schedule |
+| A.2 Data Ingestion | Drop your notes, transcripts, and tracker export into `5_Library/sources/raw/` so the chain can read them |
+| A.4 JTBD | Patterns from your conversations feed job-statement writing |
+| A.5 onwards | JTBD, PRD, prototype, and roadmap all trace back to this evidence |
 
-## Founder Flow
+## Founder flow
 
-1. Install `customer-discovery-coach.skill` in the Claude app (Customize → Skills)
-2. Run a coaching session → get ranked hypotheses + interview guide
-3. Paste hypotheses into the Guide tab of `Customer-Discovery-Tracker.xlsx`
-4. Run interviews; log responses in the Question Log
-5. Review the Pattern Summary tab after every 5 interviews
-6. Bring findings to Product Week — feeds directly into JTBD (session A.4)
+1. Run the `customer-discovery-coach` skill (or, outside this repo, install the `.skill` from the kit in the Claude app, under Customize, then Skills). About 30 to 60 minutes.
+2. You get ranked hypotheses and an interview guide.
+3. Paste the hypotheses into the Guide tab of `Customer-Discovery-Tracker.xlsx`.
+4. Hold your conversations and log responses in the Question Log.
+5. Review the Pattern Summary tab after every 5 conversations.
+6. Take the findings into the sprint. They feed directly into JTBD (A.4).

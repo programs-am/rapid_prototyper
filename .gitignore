@@ -9,6 +9,7 @@ Thumbs.db
 
 # Generated from AGENTS.md by setup — regenerate, don't edit
 CLAUDE.md
+GEMINI.md
 
 # Raw discovery data — any format, possibly sensitive; stays on your machine.
 # The processed/ folder IS tracked: that's your standardized working data.
@@ -46,12 +47,29 @@ node_modules/
 5_Library/templates/dist/
 *.tmp
 
-# Internal / authoring material — WNCP-only, must never reach the public repo
+# Internal / authoring material — never commit
 0_System/initial_build/
 0_System/spec/
 .agents/skills/_build-tools/
-.agents/1_AMC4_Product_Week/
-5_Library/roadmap/Internal/
 
 # Logs
 *.log
+
+# >>> generated skill links (setup.mjs — do not edit this block)
+.claude/skills/
+.agents/skills/customer-discovery-coach
+.agents/skills/founder-bootstrap
+.agents/skills/import-skills
+.agents/skills/ingest-init
+.agents/skills/ingest-sources
+.agents/skills/jtbd
+.agents/skills/jtbd-prioritizer
+.agents/skills/metrics
+.agents/skills/prd
+.agents/skills/prototype-kit
+.agents/skills/user-persona
+.agents/skills/util_get_company_info
+.agents/skills/util_get_inputs
+.agents/skills/util_get_user_info
+.agents/skills/value-proposition
+# <<< generated skill links

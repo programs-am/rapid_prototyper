@@ -1,9 +1,10 @@
 ---
 title: "Bolt"
-category: "Beginner"
-session: "A.5"
-owner: "Damien"
-date: "Jun 15"
+category: "Build an App or Site"
+lanes:
+  - software-app
+  - website
+  - service-experience
 summary: "StackBlitz's AI full-stack builder — describe your app and get running, editable code in the browser instantly. No install needed."
 ---
 
@@ -12,6 +13,8 @@ summary: "StackBlitz's AI full-stack builder — describe your app and get runni
 StackBlitz's AI full-stack builder — describe your app and get running, editable code in the browser instantly. No install needed.
 
 - **Pricing:** Free tier: ~150K tokens/day. Paid plans from ~$20/mo.
+- **Pricing note:** Prices and limits change often; last reviewed Jun 2026 — check the vendor's site before relying on it.
+- **Best for:** A non-technical founder who wants a working, clickable web app in an afternoon without installing anything.
 
 **5-Step Quickstart**
 1. Go to bolt.new and sign in with GitHub or Google (StackBlitz account)

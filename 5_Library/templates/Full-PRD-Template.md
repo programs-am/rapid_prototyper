@@ -1,6 +1,6 @@
 
 
-**WNCP AI**
+**FOUNDER OS**
 
 **PRODUCT REQUIREMENTS**  
 **DOCUMENT**
@@ -162,4 +162,4 @@ Who is experiencing this, what are they trying to accomplish, and why do current
 
 *One aspirational sentence: how does the world look different when this succeeds?*
 
-WNCP AI  ··  Product Requirements Document
+Founder OS  ··  Product Requirements Document

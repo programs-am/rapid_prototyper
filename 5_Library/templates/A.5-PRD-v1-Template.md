@@ -1,11 +1,11 @@
 <!-- A.5-PRD-v1-Template.md — fillable template. Founder fills by hand. -->
-<!-- This file lives in 1_Product_Week/A.5-PRD-v1/ at session time. -->
+<!-- This file lives in 1_Sprint/A.5-PRD-v1/ when you work on it. -->
 <!-- Do not announce the AI-skill-chain footer; the founder is not expected to manage files. -->
 <!-- Section numbers are load-bearing: PRD v2 carries them forward 1-to-1, with 4 new sections appended. -->
 
 <!-- form-meta:
 eyebrow = Founder OS · Product Definition
-tag = Product Week · A.5
+tag = Sprint · A.5
 -->
 
 <!-- field-hints: one per field label (keyed by label; structure above is untouched).
@@ -30,7 +30,10 @@ Nice to have — What it does = One line: what it does for the user, not how it'
 Future — Job # = The job number this future feature directly serves.
 Future — What it does = One line: what it does for the user, not how it's built.
 Hypothesis = If [feature], then [user] will [behaviour], proving [assumption].
-Output = The prototype artifact — e.g. clickable Figma, no-code app, scripted demo.
+Prototype form = What you will make to test it: app or clickable screens / web page / physical model or rig / pack + samples / campaign or deck / hand-run service.
+Output = What the customer sees or receives — e.g. a clickable flow, a landing page, a 3D model in hand, a sample with a pack, an email sequence, a manual service run.
+Test = Who you will put it in front of, how many, and how (watch them use it, show it for 3 seconds, hand them a sample, send the email).
+Pass = The observable result that tells you it worked — a number or a behaviour you can see.
 -->
 
 # PRD v1
@@ -74,7 +77,7 @@ A fill-in-the-blank exercise. Write 5 sections — Company + Value Proposition, 
 
 ## Section 4 — Features
 
-<!-- One row per feature. Scope boundary is the "Does X — does NOT Y" line. -->
+<!-- One row per feature. A feature is anything the customer experiences: a capability, a spec or attribute, or an asset or experience. Scope boundary is the "Does X — does NOT Y" line. -->
 
 | Feature | Job # | What it does | Scope boundary | Priority |
 |---|---|---|---|---|
@@ -88,10 +91,13 @@ A fill-in-the-blank exercise. Write 5 sections — Company + Value Proposition, 
 
 | | |
 |---|---|
+| Prototype form | |
 | Hypothesis | |
 | Output | |
+| Test (who · how many · how) | |
+| Pass (what you will observe) | |
 
-**User flow:**
+**User flow** (the steps your tester goes through, from first meeting it to the outcome):
 
 1. _______________________________________________
 2. _______________________________________________

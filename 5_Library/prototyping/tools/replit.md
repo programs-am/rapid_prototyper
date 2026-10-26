@@ -1,9 +1,10 @@
 ---
 title: "Replit"
-category: "Beginner"
-session: "A.5"
-owner: "Damien"
-date: "Jun 15"
+category: "Build an App or Site"
+lanes:
+  - software-app
+  - website
+  - service-experience
 summary: "Browser-based coding environment with an AI Agent that writes, runs, and deploys your app from a plain-language description."
 ---
 
@@ -12,6 +13,8 @@ summary: "Browser-based coding environment with an AI Agent that writes, runs, a
 Browser-based coding environment with an AI Agent that writes, runs, and deploys your app from a plain-language description.
 
 - **Pricing:** Free Starter plan includes daily Agent credits and ability to publish one app. Core plan ~$25/mo for full Agent access.
+- **Pricing note:** Prices and limits change often; last reviewed Jun 2026 — check the vendor's site before relying on it.
+- **Best for:** A founder who wants to build, run and host a simple app in one browser tab.
 
 **5-Step Quickstart**
 1. Sign up at replit.com/signup with GitHub, Google, or email

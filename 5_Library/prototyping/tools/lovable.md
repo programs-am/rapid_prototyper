@@ -1,9 +1,10 @@
 ---
 title: "Lovable"
-category: "Beginner"
-session: "A.5"
-owner: "Damien"
-date: "Jun 15"
+category: "Build an App or Site"
+lanes:
+  - software-app
+  - website
+  - service-experience
 summary: "Build full-stack web apps by describing them in plain English — no code required. Goes from prompt to live URL in minutes."
 ---
 
@@ -12,6 +13,8 @@ summary: "Build full-stack web apps by describing them in plain English — no c
 Build full-stack web apps by describing them in plain English — no code required. Goes from prompt to live URL in minutes.
 
 - **Pricing:** Free plan: 5 daily credits (30/month). Paid plans from $25/mo.
+- **Pricing note:** Prices and limits change often; last reviewed Jun 2026 — check the vendor's site before relying on it.
+- **Best for:** A non-technical founder who wants a full-stack web app with a live URL from a plain-English description.
 
 **5-Step Quickstart**
 1. Go to lovable.dev and sign up with GitHub or Google

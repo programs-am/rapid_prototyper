@@ -10,12 +10,12 @@ Core topic files (grow with the chain):
 ```
 0_Company/
 ├── 01_Overview.md      # one-liner, identity, stage
-├── 02_Product.md       # what it is, what it does, the core mechanism
+├── 02_Product.md       # what it is, what it does, the core mechanism, Product type (picks your prototype lane)
 ├── 03_Users.md         # who you serve, segments, early adopters
 ├── 04_Market.md        # market, competition, positioning
 ├── 05_Traction.md      # stage, metrics, OKRs
 ├── 06_Team.md          # founders, roles
-├── 07_PW_Insights.md   # running takeaways across Product Week
+├── 07_Insights.md   # running takeaways across the sprint
 └── Z_Library.md        # deeper detail, referenced by file name + section header
 ```
 
